@@ -8,6 +8,6 @@ public class UserService {
         this.name=name;
     }
     public void query(){
-        System.out.println("hello");
+        System.out.println("hello"+name);
     }
 }

@@ -10,7 +10,7 @@ public class test {
         DefaulstListableBeanFactory beanFactory = new DefaulstListableBeanFactory();
         BeanDefinition beanDefinition=new BeanDefinition(UserService.class);
         beanFactory.registerBeanDefinition("userService",beanDefinition);
-        UserService userService= (UserService) beanFactory.getBean("userService");
+        UserService userService= (UserService) beanFactory.getBean("userService","xw");
         userService.query();
     }
 }
